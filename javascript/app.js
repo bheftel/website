@@ -8,19 +8,12 @@ angular.module('Site', ['ngResource', 'ngRoute', 'ngAnimate'])
       templateUrl: 'javascript/home/homeTemplate.html',
       controller: 'HomeController'
     })
-
-    .when('/home', {
+    .when('/home', { // so the link can have something so the github pages link works.
       redirectTo: '/'
     })
     .when('/resume', {
       templateUrl: 'javascript/resume/resumeTemplate.html',
       controller: 'ResumeController'
-    })
-
-    // todo - add section for random stuff, like js art
-    .when('/etc', {
-      templateUrl: '/javascript/etc/etcTemplate.html',
-      controller: 'etcController'
     })
     .when('/music', {
       templateUrl: 'javascript/music/musicTemplate.html'
