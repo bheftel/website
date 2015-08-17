@@ -4,7 +4,7 @@ angular.module('Site', ['ngResource', 'ngRoute', 'ngAnimate'])
   '$routeProvider',
   function($locationProvider, $routeProvider) {
 
-    $routeProvider.when('/website', {
+    $routeProvider.when('/', {
       templateUrl: 'javascript/home/homeTemplate.html',
       controller: 'HomeController'
     })
