@@ -15,7 +15,7 @@
 <body>
 <div id="header" ng-class="{docked: $root.location === '/'}">
     <h2 id="brannon" ng-class="{big: $root.location === '/'}">
-        <a href="/">
+        <a href="home">
             <span class="first">brannon</span> <span class="last">heftel</span>
         </a>
     </h2>
@@ -33,12 +33,15 @@
 </div>
 <div ng-view ng-animate-children></div>
 
-<script src="../bower_components/angular/angular.js"></script>
-<script src="../bower_components/angular-route/angular-route.js"></script>
-<script src="../bower_components/angular-resource/angular-resource.js"></script>
-<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="./bower_components/angular/angular.js"></script>
+<script src="./bower_components/angular-route/angular-route.js"></script>
+<script src="./bower_components/angular-resource/angular-resource.js"></script>
+<script src="./bower_components/angular-animate/angular-animate.js"></script>
 
-<!-- include:js(../javascript/**/*.js) -->
+<!-- todo - include source wasn't working with these dynamic directories -->
+<script src="./javascript/app.js"></script>
+<script src="./javascript/home/home.js"></script>
+<script src="./javascript/resume/resume.js"></script>
 
 </body>
 </html>

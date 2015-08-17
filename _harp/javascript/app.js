@@ -5,21 +5,18 @@ angular.module('Site', ['ngResource', 'ngRoute', 'ngAnimate'])
   function($locationProvider, $routeProvider) {
 
     $routeProvider.when('/', {
-      templateUrl: '/javascript/home/homeTemplate.html',
+      templateUrl: 'javascript/home/homeTemplate.html',
       controller: 'HomeController'
     })
+    .when('/home', { // so the link can have something so the github pages link works.
+      redirectTo: '/'
+    })
     .when('/resume', {
-      templateUrl: '/javascript/resume/resumeTemplate.html',
+      templateUrl: 'javascript/resume/resumeTemplate.html',
       controller: 'ResumeController'
     })
-
-    // todo - add section for random stuff, like js art
-    .when('/etc', {
-      templateUrl: '/javascript/etc/etcTemplate.html',
-      controller: 'etcController'
-    })
     .when('/music', {
-      templateUrl: '/javascript/music/musicTemplate.html'
+      templateUrl: 'javascript/music/musicTemplate.html'
     })
     .otherwise({
       template: '<div>nothing to report</div>'
