@@ -8,6 +8,10 @@ angular.module('Site', ['ngResource', 'ngRoute', 'ngAnimate'])
       templateUrl: 'javascript/home/homeTemplate.html',
       controller: 'HomeController'
     })
+
+    .when('/home', {
+      redirectTo: '/'
+    })
     .when('/resume', {
       templateUrl: 'javascript/resume/resumeTemplate.html',
       controller: 'ResumeController'
