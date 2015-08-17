@@ -5,11 +5,11 @@ angular.module('Site', ['ngResource', 'ngRoute', 'ngAnimate'])
   function($locationProvider, $routeProvider) {
 
     $routeProvider.when('/', {
-      templateUrl: '/javascript/home/homeTemplate.html',
+      templateUrl: 'javascript/home/homeTemplate.html',
       controller: 'HomeController'
     })
     .when('/resume', {
-      templateUrl: '/javascript/resume/resumeTemplate.html',
+      templateUrl: 'javascript/resume/resumeTemplate.html',
       controller: 'ResumeController'
     })
 
@@ -19,7 +19,7 @@ angular.module('Site', ['ngResource', 'ngRoute', 'ngAnimate'])
       controller: 'etcController'
     })
     .when('/music', {
-      templateUrl: '/javascript/music/musicTemplate.html'
+      templateUrl: 'javascript/music/musicTemplate.html'
     })
     .otherwise({
       template: '<div>nothing to report</div>'
