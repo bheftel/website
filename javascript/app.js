@@ -22,7 +22,8 @@ angular.module('Site', ['ngResource', 'ngRoute', 'ngAnimate'])
       template: '<div>nothing to report</div>'
     });
 
-    $locationProvider.html5Mode(true);
+    // todo - github pages doesn't really support client side routing yet
+    //$locationProvider.html5Mode(true);
   }
 ])
 .run([
